@@ -2,18 +2,18 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
-import {IUser} from "../interfaces";
+import {IComment} from "../interfaces";
 import {urls} from "../configs";
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class CommentService {
 
   constructor(private httpClient: HttpClient) {
   }
 
-  getAll(): Observable<IUser[]> {
-    return this.httpClient.get<IUser[]>(urls.users)
+  getAll(): Observable<IComment[]> {
+    return this.httpClient.get<IComment[]>(urls.comments);
   }
 }
