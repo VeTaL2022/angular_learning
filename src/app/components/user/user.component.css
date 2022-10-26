@@ -1,0 +1,10 @@
+.user {
+  margin: 10px;
+  padding: 3px;
+
+  border: 2px solid green;
+  border-radius: 13px;
+
+  text-align: center;
+  background-color: lightgrey;
+}

@@ -1,0 +1,27 @@
+.flex {
+  font-size: 14px;
+  font-family: cursive;
+  background-color: lavender;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.users {
+  font-size: 14px;
+  font-family: cursive;
+  background-color: lightblue;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.hr {
+  height: 5px;
+  border-radius: 10px;
+  background-color: darkseagreen;
+}

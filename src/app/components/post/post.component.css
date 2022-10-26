@@ -1,0 +1,11 @@
+.post {
+  width: 80%;
+  margin: 5px;
+  padding: 3px;
+
+  border: 2px solid skyblue;
+  border-radius: 15px;
+
+  text-align: center;
+  background-color: beige;
+}

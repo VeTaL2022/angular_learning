@@ -1,0 +1,11 @@
+.comment {
+  width: 80%;
+  margin: 5px;
+  padding: 2px;
+
+  border: 2px solid #bb9ed9;
+  border-radius: 15px;
+
+  text-align: center;
+  background-color: khaki;
+}

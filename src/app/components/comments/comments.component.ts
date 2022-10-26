@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import {IComment} from "../../interfaces";
-import {CommentService} from "../../services/comment.service";
+import {CommentService} from "../../services";
 
 @Component({
   selector: 'app-comments',
@@ -17,4 +17,5 @@ export class CommentsComponent implements OnInit {
   ngOnInit(): void {
     this.commentService.getAll().subscribe(value => this.comments = value);
   }
+
 }
