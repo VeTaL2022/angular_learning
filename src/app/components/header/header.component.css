@@ -1,0 +1,21 @@
+.flex {
+  height: 50px;
+
+  font-family: cursive;
+  font-size: large;
+  background-color: lavender;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex > a {
+  text-decoration: none;
+}
+
+.flex > a:hover {
+  color: red;
+  font-size: x-large;
+}

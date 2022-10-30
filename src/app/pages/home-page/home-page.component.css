@@ -1,0 +1,12 @@
+.home{
+  text-align: center;
+  background-color: cadetblue;
+  font-family: cursive;
+  height: 90vh;
+  border-radius: 10px;
+}
+.home > img {
+  height: 600px;
+  border-radius: 25px;
+  margin-right: 10px;
+}

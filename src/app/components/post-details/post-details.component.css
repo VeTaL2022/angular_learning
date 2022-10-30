@@ -1,0 +1,11 @@
+.postDetails{
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  text-align: center;
+  font-family: cursive;
+  background-color: #ffd59b;
+  border-radius: 15px;
+}

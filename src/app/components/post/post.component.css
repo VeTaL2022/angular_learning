@@ -1,0 +1,14 @@
+.post {
+  width: 260px;
+  min-height: 90px;
+  margin: 10px;
+  padding: 10px;
+
+  border: 2px solid blue;
+  border-radius: 10px;
+
+  color: beige;
+  background-color: #7878f5;
+  font-family: cursive;
+  text-align: center;
+}

@@ -20,11 +20,8 @@ const routes: Routes = [
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: 'home', pathMatch: 'full'},
       {path: 'home', component: HomePageComponent},
-      {
-        path: 'users', component: UserPageComponent, children: [
-          {path: ':id', component: UserDetailsComponent}
-        ]
-      },
+      {path: 'users', component: UserPageComponent},
+      {path: 'users/:id', component: UserDetailsComponent},
       {
         path: 'posts', component: PostPageComponent, children: [
           {path: ':id', component: PostDetailsComponent}

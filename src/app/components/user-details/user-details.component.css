@@ -1,0 +1,12 @@
+.userDetails {
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+
+  font-family: cursive;
+  color: #aba53d;
+  background-color: beige;
+}

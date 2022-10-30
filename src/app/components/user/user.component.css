@@ -1,0 +1,17 @@
+.user {
+  margin: 10px 25px 10px 25px;
+  width: 200px;
+  height: 100px;
+
+  border: 3px solid lightgrey;
+  border-radius: 10px;
+
+  color: snow;
+  font-family: cursive;
+  background-color: skyblue;
+}
+.user button{
+  margin: 2px;
+  padding: 2px 4px 2px 4px;
+  cursor: pointer;
+}

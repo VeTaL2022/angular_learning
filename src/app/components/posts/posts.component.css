@@ -1,0 +1,14 @@
+.posts {
+  text-align: center;
+}
+
+.posts > div {
+  color: darkturquoise;
+  font-family: cursive;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
