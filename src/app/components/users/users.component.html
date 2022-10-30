@@ -1,3 +1,3 @@
-<app-user *ngFor="let user of users" [user]="user" (liftUser)="getUser($event)"></app-user>
-<hr>
 <div *ngIf="selectedUser">{{selectedUser.username}}</div>
+<hr>
+<app-user *ngFor="let user of users" [user]="user" (liftUser)="getUser($event)"></app-user>

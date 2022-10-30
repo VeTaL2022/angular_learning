@@ -1,19 +1,18 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-
-import {IUser} from "../../interfaces";
+import {IPost} from "../../interfaces";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
-  selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  selector: 'app-post',
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.css']
 })
-export class UserComponent implements OnInit {
+export class PostComponent implements OnInit {
   @Input()
-  user: IUser;
+  post: IPost;
 
   @Output()
-  liftUser = new EventEmitter<IUser>()
+  liftPost = new EventEmitter<IPost>()
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
   }
@@ -22,13 +21,13 @@ export class UserComponent implements OnInit {
   }
 
   lift(): void {
-    this.liftUser.emit(this.user);
+    this.liftPost.emit(this.post)
   }
 
   getDetails(): void {
-    this.router.navigate([this.user.id], {
+    this.router.navigate([this.post.id], {
       relativeTo: this.activatedRoute,
-      state:{user: this.user}
+      state: {post: this.post}
     })
   }
 }

@@ -1,0 +1,3 @@
+<div *ngIf="selectedPost">{{selectedPost.title}}</div>
+<hr>
+<app-post *ngFor="let post of posts" [post]="post" (liftPost)="getPost($event)"></app-post>
