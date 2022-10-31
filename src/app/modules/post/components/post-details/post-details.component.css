@@ -3,7 +3,7 @@ div{
   width: 47%;
 
   position: fixed;
-  right: 5px;
+  right: 0;
   bottom: 45%;
 
   border: 3px solid #8fa5ef;
@@ -11,6 +11,6 @@ div{
 
   text-align: center;
   font-family: cursive;
-  font-size: 14px;
+  font-size: 18px;
   background-color: #bdde98;
 }

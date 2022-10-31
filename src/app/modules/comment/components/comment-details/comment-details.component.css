@@ -1,0 +1,15 @@
+div{
+  text-align: center;
+  padding: 10px;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  background-color: darkkhaki;
+  font-family: cursive;
+  font-size: 18px;
+
+  border: 3px solid lightslategrey;
+  border-radius: 15px;
+}
