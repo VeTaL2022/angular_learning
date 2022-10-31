@@ -9,18 +9,21 @@ import {UserService} from "./services";
 
 
 @NgModule({
-  declarations: [
-    UsersComponent,
-    UserComponent,
-    UserDetailsComponent
-  ],
-  imports: [
-    CommonModule,
-    UserRoutingModule
-  ],
-  providers: [
-    UserService
-  ]
+    declarations: [
+        UsersComponent,
+        UserComponent,
+        UserDetailsComponent
+    ],
+    imports: [
+        CommonModule,
+        UserRoutingModule
+    ],
+    exports: [
+        UserComponent
+    ],
+    providers: [
+        UserService
+    ]
 })
 export class UserModule {
 }

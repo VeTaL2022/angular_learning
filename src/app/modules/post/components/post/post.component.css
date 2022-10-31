@@ -1,0 +1,12 @@
+.post {
+  padding: 5px;
+  margin: 5px;
+
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+
+  background-color: #c8ebf8;
+  font-family: cursive;
+
+  width: 50%;
+}

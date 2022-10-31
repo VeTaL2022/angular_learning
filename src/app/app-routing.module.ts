@@ -7,7 +7,9 @@ import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
-      {path: 'users', loadChildren: () => import('./modules/user/user.module').then(value => value.UserModule)}
+      {path: 'users', loadChildren: () => import('./modules/user/user.module').then(value => value.UserModule)},
+      {path: 'posts', loadChildren: () => import('./modules/post/post.module').then(value => value.PostModule)},
+      {path: 'comments', loadChildren: () => import('./modules/comment/comment.module').then(value => value.CommentModule)}
     ]
   }
 ];
