@@ -1,0 +1,10 @@
+div{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: darkkhaki;
+}
+form{
+  background-color: lightblue;
+  text-align: center;
+}

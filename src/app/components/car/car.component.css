@@ -1,0 +1,23 @@
+.car {
+  padding: 10px;
+
+  border: 2px solid gray;
+  border-radius: 22px;
+
+  text-align: center;
+  font-family: cursive;
+  color: royalblue;
+  background-color: darkturquoise;
+}
+
+.car div {
+  margin: 6px;
+  padding: 4px;
+
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+.car div:hover {
+  background-color: darkkhaki;
+}
