@@ -1,0 +1,19 @@
+.tool-bar {
+  justify-content: space-between;
+}
+
+.tools {
+  display: flex;
+}
+
+.tools div {
+  padding: 0 10px;
+}
+
+.tools div:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: lawngreen;
+}
