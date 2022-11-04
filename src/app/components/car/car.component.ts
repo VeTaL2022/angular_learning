@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+
+import {ICar} from "../../interfaces";
 
 @Component({
   selector: 'app-car',
@@ -6,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./car.component.css']
 })
 export class CarComponent implements OnInit {
+  @Input()
+  car: ICar;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
