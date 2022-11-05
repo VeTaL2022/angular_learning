@@ -1,8 +1,10 @@
 <div class="car">
-  <div>id: {{car.id}}</div>
-  <div>model: {{car.model}}</div>
-  <div>price: {{car.price}}</div>
-  <div>year: {{car.year}}</div>
+  <div class="info">
+    <div>id: {{car.id}}</div>
+    <div>model: {{car.model}}</div>
+    <div>price: {{car.price}}</div>
+    <div>year: {{car.year}}</div>
+  </div>
   <div *ngIf="car.photo" class="photo">
     <img src = '{{car.photo}}' alt="{{car.model}}"/>
   </div>

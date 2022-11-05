@@ -1,6 +1,7 @@
 <form [formGroup]="form">
   <mat-card>
     <mat-card-title>Register</mat-card-title>
+    <mat-error *ngIf="error">User already exists</mat-error>
     <mat-card-content>
       <div>
         <mat-form-field appearance="standard">
