@@ -1,0 +1,15 @@
+.car {
+  margin: 10px;
+  padding: 10px;
+
+  border: 3px solid grey;
+  border-radius: 15px;
+
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+.photo img {
+  width: 300px;
+  border-radius: 10px;
+}

@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
       disableClose: true,
       enterAnimationDuration: '0.6s',
       exitAnimationDuration: '0.6s'
-    })
+    });
   }
 
 }

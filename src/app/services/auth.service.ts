@@ -25,7 +25,7 @@ export class AuthService {
     )
   }
 
-  Register(user: IAuth): Observable<IAuth> {
+  register(user: IAuth): Observable<IAuth> {
     return this.httpClient.post<IAuth>(urls.users, user);
   }
 

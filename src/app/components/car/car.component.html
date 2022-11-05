@@ -1,1 +1,9 @@
-<div>{{car|json}}</div>
+<div class="car">
+  <div>id: {{car.id}}</div>
+  <div>model: {{car.model}}</div>
+  <div>price: {{car.price}}</div>
+  <div>year: {{car.year}}</div>
+  <div *ngIf="car.photo" class="photo">
+    <img src = '{{car.photo}}' alt="{{car.model}}"/>
+  </div>
+</div>
