@@ -16,7 +16,8 @@ export class RegisterComponent implements OnInit {
     this.dialog.open(RegisterFormComponent, {
       disableClose: true,
       enterAnimationDuration: '0.6s',
-      exitAnimationDuration: '0,6s'
+      exitAnimationDuration: '0,6s',
+      hasBackdrop: false
     });
   }
 

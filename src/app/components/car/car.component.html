@@ -1,11 +1,33 @@
-<div class="car">
-  <div class="info">
+<!--<div>-->
+<!--&lt;!&ndash;  <div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div>id: {{car.id}}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div>model: {{car.model}}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div>price: {{car.price}}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div>year: {{car.year}}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  <div *ngIf="car.photo" class="photo">&ndash;&gt;-->
+<!--&lt;!&ndash;    <img src = '{{car.photo}}' alt="{{car.model}}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--</div>-->
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                     (closed)="panelOpenState = false">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{car.model}}
+    </mat-panel-title>
+    <mat-panel-description>
+      <span *ngIf="panelOpenState; else carInfo"></span>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div>
     <div>id: {{car.id}}</div>
     <div>model: {{car.model}}</div>
     <div>price: {{car.price}}</div>
     <div>year: {{car.year}}</div>
   </div>
-  <div *ngIf="car.photo" class="photo">
-    <img src = '{{car.photo}}' alt="{{car.model}}"/>
-  </div>
-</div>
+</mat-expansion-panel>
+
+<ng-template #carInfo>
+  id: {{car.id}} model: {{car.model}} price: {{car.price}} year: {{car.year}}
+</ng-template>

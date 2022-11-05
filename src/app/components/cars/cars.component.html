@@ -1,19 +1,24 @@
-<form [formGroup]="form">
-  <mat-form-field appearance="standard">
-    <mat-label>Model</mat-label>
-    <input matInput type="text" formControlName="model">
-  </mat-form-field>
-  <mat-form-field appearance="standard">
-    <mat-label>Price</mat-label>
-    <input matInput type="text" formControlName="price">
-  </mat-form-field>
-  <mat-form-field appearance="standard">
-    <mat-label>Year</mat-label>
-    <input matInput type="text" formControlName="year">
-  </mat-form-field>
-  <button mat-raised-button color="primary" (click)="Create()">Create</button>
-</form>
+<!--<form [formGroup]="form">-->
+<!--  <mat-form-field appearance="standard">-->
+<!--    <mat-label>Model</mat-label>-->
+<!--    <input matInput type="text" formControlName="model">-->
+<!--  </mat-form-field>-->
+<!--  <mat-form-field appearance="standard">-->
+<!--    <mat-label>Price</mat-label>-->
+<!--    <input matInput type="text" formControlName="price">-->
+<!--  </mat-form-field>-->
+<!--  <mat-form-field appearance="standard">-->
+<!--    <mat-label>Year</mat-label>-->
+<!--    <input matInput type="text" formControlName="year">-->
+<!--  </mat-form-field>-->
+<!--  <button mat-raised-button color="primary" (click)="Create()">Create</button>-->
+<!--</form>-->
 
-<div class="cars">
+<mat-accordion>
   <app-car *ngFor="let car of cars" [car]="car"></app-car>
-</div>
+</mat-accordion>
+
+<mat-paginator [length]="total_items"
+               [pageSize]="10"
+               aria-label="Select page">
+</mat-paginator>
