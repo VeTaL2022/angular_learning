@@ -1,0 +1,10 @@
+.flex{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  align-items: center;
+}
+.photo img{
+  width: 300px;
+  border-radius: 15px;
+}

@@ -2,12 +2,3 @@ form{
   text-align: center;
   background-color: darkkhaki;
 }
-.cars{
-  font-family: cursive;
-  color: darkslategray;
-  background-color: #a6bcff;
-
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}

@@ -20,14 +20,19 @@
       <span *ngIf="panelOpenState; else carInfo"></span>
     </mat-panel-description>
   </mat-expansion-panel-header>
-  <div>
-    <div>id: {{car.id}}</div>
-    <div>model: {{car.model}}</div>
-    <div>price: {{car.price}}</div>
-    <div>year: {{car.year}}</div>
+  <div class="flex">
+    <div>
+      <p>id: {{car.id}}</p>
+      <p>model: {{car.model}}</p>
+      <p>price: {{car.price}}</p>
+      <p>year: {{car.year}}</p>
+    </div>
+    <div *ngIf="car.photo" class="photo">
+      <img src='{{car.photo}}' alt='{{car.model}}'/>
+    </div>
   </div>
 </mat-expansion-panel>
 
 <ng-template #carInfo>
-  id: {{car.id}} model: {{car.model}} price: {{car.price}} year: {{car.year}}
+  Click for more details!
 </ng-template>
